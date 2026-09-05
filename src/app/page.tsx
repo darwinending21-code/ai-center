@@ -10,14 +10,14 @@ export default function HomePage() {
     <div className="relative overflow-hidden">
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-x-0 top-0 h-[28rem] bg-[radial-gradient(ellipse_at_top,_rgba(15,118,110,0.12),_transparent_60%),linear-gradient(180deg,_#e8f5f1_0%,_transparent_100%)]"
+        className="pointer-events-none absolute inset-x-0 top-0 h-[420px] bg-[radial-gradient(ellipse_80%_60%_at_50%_-10%,rgba(37,99,235,0.12),transparent),linear-gradient(180deg,#eef4ff_0%,transparent_70%)] dark:bg-[radial-gradient(ellipse_80%_60%_at_50%_-10%,rgba(59,130,246,0.16),transparent),linear-gradient(180deg,rgba(15,23,42,0.65)_0%,transparent_70%)]"
       />
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-0 opacity-[0.35] [background-image:linear-gradient(rgba(15,118,110,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(15,118,110,0.04)_1px,transparent_1px)] [background-size:48px_48px] [mask-image:linear-gradient(to_bottom,black,transparent)]"
+        className="pointer-events-none absolute top-24 left-1/2 h-64 w-[42rem] -translate-x-1/2 rounded-full bg-cyan-400/10 blur-3xl dark:bg-blue-500/10"
       />
 
-      <section className="relative mx-auto w-full max-w-7xl px-4 pt-14 pb-20 sm:px-6 sm:pt-16">
+      <section className="relative mx-auto w-full max-w-7xl px-4 pt-12 pb-20 sm:px-6 sm:pt-16">
         <HomeExplorer sites={sites} categories={categories} stats={stats} />
       </section>
     </div>

@@ -12,7 +12,7 @@ type SiteFaviconProps = {
 
 const sizeClass = {
   sm: "size-8 text-xs",
-  md: "size-10 text-sm",
+  md: "size-11 text-sm",
   lg: "size-14 text-lg",
 };
 
@@ -29,7 +29,7 @@ export function SiteFavicon({
     return (
       <div
         className={cn(
-          "flex shrink-0 items-center justify-center rounded-xl bg-teal-700 font-semibold text-white",
+          "flex shrink-0 items-center justify-center rounded-xl bg-slate-900 font-semibold text-white dark:bg-slate-100 dark:text-slate-900",
           sizeClass[size],
           className,
         )}
@@ -47,8 +47,9 @@ export function SiteFavicon({
       alt=""
       width={56}
       height={56}
+      loading="lazy"
       className={cn(
-        "shrink-0 rounded-xl bg-white object-contain ring-1 ring-black/5",
+        "shrink-0 rounded-xl bg-white object-contain ring-1 ring-border/80",
         sizeClass[size],
         className,
       )}

@@ -127,4 +127,51 @@
   html {
     @apply font-sans;
   }
+  html.dark {
+    color-scheme: dark;
+  }
+  html:not(.dark) {
+    color-scheme: light;
+  }
+}
+
+/* Fallback color tween when View Transitions API is unavailable */
+html.theme-transition,
+html.theme-transition *,
+html.theme-transition *::before,
+html.theme-transition *::after {
+  transition:
+    background-color 0.38s ease,
+    color 0.38s ease,
+    border-color 0.38s ease,
+    box-shadow 0.38s ease,
+    fill 0.38s ease,
+    stroke 0.38s ease,
+    outline-color 0.38s ease !important;
+}
+
+/* Circular wipe theme switch */
+@supports (view-transition-name: root) {
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation: none;
+    mix-blend-mode: normal;
+  }
+
+  ::view-transition-old(root) {
+    z-index: 1;
+  }
+
+  ::view-transition-new(root) {
+    z-index: 9999;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html.theme-transition,
+  html.theme-transition *,
+  html.theme-transition *::before,
+  html.theme-transition *::after {
+    transition: none !important;
+  }
 }
