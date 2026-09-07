@@ -6,8 +6,8 @@ const NAV_LINKS = [
   { href: "/", label: "首页" },
   { href: "/#categories", label: "分类探索" },
   { href: "/#tools", label: "在线工具" },
+  { href: "/news", label: "每日资讯" },
   { href: "/#featured", label: "热门榜单" },
-  { href: "/#recommend", label: "最新收录" },
 ];
 
 export function SiteHeader() {

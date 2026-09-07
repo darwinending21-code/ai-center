@@ -38,14 +38,13 @@ export function ThemeToggle() {
   }, []);
 
   const current = theme ?? "system";
-  const TriggerIcon =
-    !mounted
-      ? Monitor
-      : current === "system"
-        ? Monitor
-        : resolvedTheme === "dark"
-          ? Moon
-          : Sun;
+  const TriggerIcon = !mounted
+    ? Monitor
+    : current === "system"
+    ? Monitor
+    : resolvedTheme === "dark"
+    ? Moon
+    : Sun;
 
   const handleThemeChange = (value: string) => {
     if (value === current) return;

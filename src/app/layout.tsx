@@ -29,17 +29,17 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       suppressHydrationWarning
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="flex min-h-full flex-col bg-background text-foreground">
+      <body className="flex min-h-full flex-col bg-[#f5f7fb] text-foreground dark:bg-background">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <SiteHeader />
           <div className="flex flex-1 flex-col">{children}</div>
-          <footer className="border-t border-border bg-card py-10">
-            <div className="mx-auto flex w-full max-w-7xl flex-col items-center gap-2 px-4 text-center sm:px-6">
+          <footer className="border-t border-border bg-card py-8">
+            <div className="mx-auto flex w-full max-w-[1440px] flex-col items-center gap-1 px-4 text-center lg:px-6">
               <p className="text-sm font-semibold text-foreground">
                 AI<span className="text-blue-600 dark:text-blue-400">Center</span>
               </p>
-              <p className="text-sm text-muted-foreground">
-                面向创作者与团队的 AI 工具导航平台
+              <p className="text-xs text-muted-foreground">
+                发现全球顶尖的 AI 工具与实用神器
               </p>
             </div>
           </footer>

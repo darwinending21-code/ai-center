@@ -31,7 +31,7 @@ export function SiteFavicon({
         className={cn(
           "flex shrink-0 items-center justify-center rounded-xl bg-slate-900 font-semibold text-white dark:bg-slate-100 dark:text-slate-900",
           sizeClass[size],
-          className,
+          className
         )}
         aria-hidden
       >
@@ -51,7 +51,7 @@ export function SiteFavicon({
       className={cn(
         "shrink-0 rounded-xl bg-white object-contain ring-1 ring-border/80",
         sizeClass[size],
-        className,
+        className
       )}
       onError={() => setFailed(true)}
     />

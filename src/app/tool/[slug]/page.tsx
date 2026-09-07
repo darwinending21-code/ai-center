@@ -162,7 +162,9 @@ export default async function ToolDetailPage({ params }: PageProps) {
 
           <div className="grid gap-8 lg:grid-cols-[1.4fr_0.8fr]">
             <section className="space-y-3">
-              <h2 className="text-lg font-semibold text-foreground">工具介绍</h2>
+              <h2 className="text-lg font-semibold text-foreground">
+                工具介绍
+              </h2>
               <p className="leading-7 whitespace-pre-wrap text-muted-foreground">
                 {site.desc || site.intro || "暂无详细介绍。"}
               </p>
